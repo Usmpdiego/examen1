@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR */
+.container {
+  max-width: 800px;
+  background: white;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  /* Animación al cargar */
+  animation: fadeIn 0.6s ease;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 26px;
+  color: #222;
+}
+
+.header p {
+  color: #666;
+}
+
+/* SECCIONES */
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* CARDS */
+.card {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fafafa;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  /* Animación al aparecer */
+  animation: fadeUp 0.5s ease;
+}
+
+/* Hover suave */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* TEXTO */
+p {
+  line-height: 1.5;
+  color: #444;
+}
+
+/* DESEMPEÑO */
+.performance {
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
